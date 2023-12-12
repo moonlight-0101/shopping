@@ -1,0 +1,67 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.mahtab{
+  color:#007bff
+}
+.swiper-pagination-bullet{
+  background-color: rgb(0, 132, 255) !important;
+  padding: 5px !important;
+  margin-right: 10px !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: rgb(0 123  255) !important;
+  padding: 6px !important;
+  
+}
+
+.swiper-pagination{
+  text-align: right !important;
+  padding-right: 300px !important;
+  margin-bottom:70px !important;
+}
+@layer base{
+  :root{
+      --bg-color:0 123  255;
+      --fill-color:248 113 113;
+      --y-color:219 242 44
+      /* --fill-color-indicator:228 38 38; */
+  }
+
+}
+@layer components{
+  .btn{
+      @apply px-4 py-2 bg-current text-white  rounded-lg hover:bg-teal-700 focus:outline-none focus:ring-blue-400 
+  } 
+  .btns{
+      @apply px-2 py-1 bg-current text-xs text-white  rounded-lg hover:bg-teal-700 focus:outline-none focus:ring-blue-400 
+  }
+ 
+}
